@@ -30,3 +30,7 @@ move sandbox clean
 move sandbox run scripts/test.move --signers 0xf -v --dry-run
 move sandbox run scripts/test.move --signers 0xf -v
 ```
+# test
+```
+UPDATE_BASELINE=1 move sandbox exp-test
+```
