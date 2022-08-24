@@ -11,6 +11,7 @@ move build
 ```
 move disassemble --name HelloWorld
 move disassemble --name Test
+move disassemble --name Vm
 ```
 
 # publish
@@ -33,4 +34,12 @@ move sandbox run scripts/test.move --signers 0xf -v
 # test
 ```
 UPDATE_BASELINE=1 move sandbox exp-test
+```
+
+# VM
+```
+move sandbox run scripts/vm/init.move --signers 0xf -v
+move sandbox run scripts/vm/publish.move -v --signers 0xf
+move sandbox run scripts/vm/run.move -v --signers 0xf
+move sandbox run scripts/vm/unpublish.move -v --signers 0xf
 ```
